@@ -43,4 +43,23 @@ for (i<-0 until b.size) {
 }
 
 //Q4 
+val test = Array(10, 7, -5, 11, -44, 0, 22, -22, -100, 77, -5);
+test.filter(_>0) ++ test.filter(_<=0)
+
+//Q6
+test.sortWith(_>_)
+
+// Q7
+test.distinct
+
+//Q8
+var tz = java.util.TimeZone.getAvailableIDs
+for (i<- 0 until tz.size) {
+    tz(i) = tz(i).replace("Africa/","")
+}
+
+//Q9
+import java.awt.datatransfer._
+
+
 
